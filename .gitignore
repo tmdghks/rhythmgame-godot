@@ -13,3 +13,16 @@ export_presets.cfg
 .mono/
 data_*/
 mono_crash.*.json
+/android/
+
+# OS temp
+.DS_Store
+Thumbs.db
+
+# build game files
+*.exe
+*.app
+*.pck
+*.dylib
+*.so
+
