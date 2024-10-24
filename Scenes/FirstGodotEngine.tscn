@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bm6dheficb7ku"]
+
+[node name="FirstGodotEngine" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
