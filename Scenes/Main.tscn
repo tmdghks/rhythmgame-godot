@@ -1,29 +1,31 @@
-[gd_scene load_steps=3 format=3 uid="uid://yanwb61nhde"]
+[gd_scene load_steps=4 format=3 uid="uid://yanwb61nhde"]
 
 [ext_resource type="Script" path="res://Scripts/note_spawn.gd" id="1_2hlhk"]
 [ext_resource type="PackedScene" uid="uid://cb7vun805nqba" path="res://Scenes/Note.tscn" id="2_wpmko"]
+[ext_resource type="Script" path="res://Scripts/JudgeLine.gd" id="3_012ug"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_2hlhk")
 note_scene = ExtResource("2_wpmko")
 
-[node name="Static Sprites" type="Node2D" parent="."]
+[node name="Static_Sprites" type="Node2D" parent="."]
 
-[node name="Background" type="ColorRect" parent="Static Sprites"]
+[node name="Background" type="ColorRect" parent="Static_Sprites"]
 offset_right = 1920.0
 offset_bottom = 1080.0
 color = Color(0.151276, 0.151276, 0.151276, 1)
 
-[node name="Lane" type="ColorRect" parent="Static Sprites"]
+[node name="Lane" type="ColorRect" parent="Static_Sprites"]
 offset_top = 440.0
 offset_right = 1920.0
 offset_bottom = 640.0
 
-[node name="JudgeLine" type="ColorRect" parent="Static Sprites"]
+[node name="JudgeLine" type="ColorRect" parent="Static_Sprites"]
 offset_left = 100.0
 offset_top = 440.0
 offset_right = 228.0
 offset_bottom = 640.0
 color = Color(1, 0, 0, 1)
+script = ExtResource("3_012ug")
 
 [node name="Node2D" type="Node2D" parent="."]
