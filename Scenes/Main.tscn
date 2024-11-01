@@ -1,6 +1,11 @@
-[gd_scene format=3 uid="uid://yanwb61nhde"]
+[gd_scene load_steps=3 format=3 uid="uid://yanwb61nhde"]
+
+[ext_resource type="Script" path="res://Scripts/note_spawn.gd" id="1_2hlhk"]
+[ext_resource type="PackedScene" uid="uid://cb7vun805nqba" path="res://Scenes/Note.tscn" id="2_wpmko"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_2hlhk")
+note_scene = ExtResource("2_wpmko")
 
 [node name="Static Sprites" type="Node2D" parent="."]
 
@@ -17,6 +22,8 @@ offset_bottom = 640.0
 [node name="JudgeLine" type="ColorRect" parent="Static Sprites"]
 offset_left = 100.0
 offset_top = 440.0
-offset_right = 300.0
+offset_right = 228.0
 offset_bottom = 640.0
 color = Color(1, 0, 0, 1)
+
+[node name="Node2D" type="Node2D" parent="."]
