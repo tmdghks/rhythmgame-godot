@@ -13,3 +13,10 @@ color = Color(0.151276, 0.151276, 0.151276, 1)
 offset_top = 440.0
 offset_right = 1920.0
 offset_bottom = 640.0
+
+[node name="JudgeLine" type="ColorRect" parent="Static Sprites"]
+offset_left = 100.0
+offset_top = 440.0
+offset_right = 300.0
+offset_bottom = 640.0
+color = Color(1, 0, 0, 1)
